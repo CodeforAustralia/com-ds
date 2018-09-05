@@ -3,7 +3,7 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 "Poppins";
+  font-family: 'Poppins', sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -67,7 +67,7 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  font-family: 'Poppins', sans-serif, monospace;
   color:#333;
 }
 
