@@ -1,6 +1,5 @@
 ---
 layout: default
-section: Components
-title: Layout
+title: Input Fields
 ---
 # Hellow world
