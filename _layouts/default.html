@@ -13,7 +13,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item brand-text" href="#">
-					<img src="assets/img/logo.svg" alt="logo" width="100" height="auto">
+					<img src="/assets/img/logo.svg" alt="logo" width="100" height="auto">
         		</a>               
             </div>           
         </div>
@@ -25,12 +25,15 @@
             <div class="column is-3">
                 <aside class="menu">
 					{% for section in site.data.menu %}
+                      {% assign folder_path= section.name | downcase | replace: " ", "-" | prepend:"/" | append:"/" %}
 						 <p class="menu-label">
 							{{ section.name }} 
 						</p>
 							<ul class="menu-list">
                               {% for subsection in section.subsections %}
-                                      <li><a href="{{subsection.name | downcase | append:'.html'}}"> {{subsection.name}}</a></li>	
+                              
+                              
+                                      <li><a href="{{ subsection.name | downcase | append:'.html' | prepend:folder_path }}"> {{subsection.name}}</a></li>	
                               {% endfor %}
 							</ul>
 							
