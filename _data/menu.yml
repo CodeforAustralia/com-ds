@@ -12,7 +12,7 @@
   subsections:
     - name: Input Fields      
     - name: Buttons
-    - name: Text-Links
+    - name: Text Links
 - name: Patterns
   subsections:
     - name: Location map      
@@ -23,6 +23,6 @@
     - name: Multiple choice question
     - name: Attaching photos and files
     - name: Loading and processing indicators
-    - name: Images - Identifying a vehicle
+    - name: Images  Identifying a vehicle
     - name: Choosing a waste or bin type
     - name: Confirm & send
