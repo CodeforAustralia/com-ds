@@ -19,31 +19,28 @@
         </div>
     </nav>
     <!-- END NAV -->
-    <div class="container">	
-		
+    <div class="container">			
         <div class="columns">
             <div class="column is-3">
-                <aside class="menu">
-					{% for section in site.data.menu %}
-                      {% assign folder_path= section.name | downcase | replace: " ", "-" | prepend:"/" | append:"/" %}
-						 <p class="menu-label">
-							{{ section.name }} 
-						</p>
-							<ul class="menu-list">
-                              {% for subsection in section.subsections %}
-                              
-                              
-                                      <li><a href="{{ subsection.name | downcase | append:'.html' | prepend:folder_path }}"> {{subsection.name}}</a></li>	
-                              {% endfor %}
-							</ul>
-							
-					{% endfor %}                  
-                      
+                <aside class="menu">                 
+                  {% for section in site.data.sections %}                    
+                  <p class="menu-label">{{ section.title }}</p>                   
+                  <ul class="menu-list">
+                  {% for sub in section.subsections  %} 
+                    <ul class="menu-list">
+                      {% for page in site.pages%} 
+                         {% assign suburl=  sub.link | append:'.html'%}                                                 
+                         {% if suburl == page.url %}                                                
+                          <li><a href="{{page.url}}"> {{page.title}}</a></li>	
+                        {%endif%}
+                      {% endfor %}
+                    </ul>
+                  {% endfor %}
+                  </ul>
+                  {% endfor %}                      
                 </aside>
             </div>
-            <div class="column is-9">
-					{{content}}
-            </div>
+            <div class="column is-9">{{content}}</div>
         </div>
     </div>    
 </body>

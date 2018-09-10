@@ -1,0 +1,10 @@
+- title: Design System
+  subsections:
+    - link: /design-system/about
+    - link: /design-system/philosophy
+    - link: /design-system/principles 
+- title: Style
+  subsections:
+    - link: /style/typography
+    - link: /style/colours
+    - link: /style/grid-and-layouts
