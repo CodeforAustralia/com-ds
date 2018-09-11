@@ -72,8 +72,18 @@ nav.navbar {
   height: 100%;
 }
 
+.contentcontainer{
+  background-color: #ffffff;
+  
+}
+
+.menucontainer{
+  background-color: #f2f3f4;
+  
+}
 .menu {
-	background: #dbdfe8;
+	background-color: #dbdfe8;
+    border: solid 1px #c9c9cc;
 	overflow-y: auto;
 }
 .menu-label {
