@@ -3,4 +3,6 @@ layout: default
 title: Principles
 ---
 
-# Hellow world
+# DCI Design Principles
+* * *
+![Branching](/assets/19471379/19472566.png)

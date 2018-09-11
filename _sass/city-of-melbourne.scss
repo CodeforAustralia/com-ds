@@ -104,11 +104,17 @@ nav.navbar {
   font-style: normal;
   font-stretch: normal;  
   letter-spacing: normal;
-  color:#000000 ;
+  color:#000000 ;color:#000000 ;
 }
 .menu-list a:hover {
-  background-color: transparent;
-  color: #276cda;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; 
+  text-decoration: underline;
+  letter-spacing: normal;
+  color:#000000 ;  
 }
 .menu-list a.is-active {
   background-color: transparent;
